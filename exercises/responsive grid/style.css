@@ -1,0 +1,68 @@
+div {
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    display: inline-block;
+    border-spacing: 5px;
+    background-color: white;
+}
+.box-1 {
+    width: 100%;
+    height: 100px;
+    background-color: pink;
+}
+
+.box-2 {
+    width: 25%;
+    height: 100px;
+    background-color: deeppink;
+}
+
+.box-3 {
+    width: 50%;
+    height: 100px;
+    background-color: deepskyblue;
+}
+
+.box-4 {
+    width: 80%;
+    height: 100px;
+    background-color: blue;
+}
+
+
+.box-5 {
+    width:20%;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+body {
+    margin-left: 20px;
+    width: 100%;
+}
+
+@media (max-width:500px) {
+    .box-1 {
+        width: 100%;
+    }
+    
+    .box-2 {
+        width: 100%;
+    }
+    .box-3 {
+        100%;
+    }
+    
+    .box-4 {
+        width: 100%;
+    }
+    .box-5 {
+        width: 100%;
+    }
+}
