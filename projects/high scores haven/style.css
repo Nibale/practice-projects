@@ -1,0 +1,28 @@
+th {
+    background-color:gold;
+    }
+
+
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: fantasy;
+    color: red;
+}
+
+
+input {
+    margin-top: 20px;
+    border-radius: 30%;
+    background-color: lightcyan !important;
+    }
+button {
+    margin-top: 20px;
+}
+
+body {
+    background-image: url(reflection-pad-gaming-gamepad.jpg);
+    background-size: cover;
+    background-position: center;
+}
