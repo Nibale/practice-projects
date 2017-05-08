@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body ng-controller="mainCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control" type="text" ng-model="name" placeholder="name">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" type="text" ng-model="age" placeholder="age">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" type="text" ng-model="phone" placeholder="phone">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" type="text" ng-model="address" placeholder="address">
+            </div>
+
+
+            <div class="col-md-6">
+                <input class="form-control" type="text" ng-model="work" placeholder="work">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" type="text" ng-model="hoppy" placeholder="hoppy">
+            </div>
+        </div>
+        <div ng-repeat="x in people">
+            <p>{{x.name}}</p>
+            <p>{{x.age}}</p>
+            <p>{{x.phone}}</p>
+            <p>{{x.address}}</p>
+            <p>{{x.work}}</p>
+            <p>{{x.hoppy}}</p>
+            <p>{{x.text}}</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <textarea class="form-control" ng-model="text">
+                {{text}}
+            </textarea>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <button ng-click="submit()">click me</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
